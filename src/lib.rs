@@ -2,8 +2,7 @@ use std::{collections::VecDeque, time::Duration};
 
 use bevy::prelude::*;
 use bevy_tweening::{
-    lens::UiPositionLens, Animator, Delay, EaseFunction, Sequence, Tween, TweeningPlugin,
-    TweeningType,
+    lens::UiPositionLens, Animator, Delay, EaseFunction, Sequence, Tween, TweeningType,
 };
 
 const TOAST_WIDTH: f32 = 300.;
@@ -15,8 +14,6 @@ pub struct ToastPlugin;
 
 impl Plugin for ToastPlugin {
     fn build(&self, app: &mut App) {
-        app.add_plugin(TweeningPlugin);
-
         app.add_event::<ShowToast>()
             .insert_resource(ToastQueue::default())
             .add_startup_system(build_ui)

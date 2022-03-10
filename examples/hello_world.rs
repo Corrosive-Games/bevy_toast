@@ -2,6 +2,7 @@ use std::time::Duration;
 
 use bevy::{prelude::*, window::WindowMode};
 use bevy_toast::{ShowToast, ToastPlugin};
+use bevy_tweening::TweeningPlugin;
 
 #[cfg(debug_assertions)]
 use bevy_inspector_egui::WorldInspectorPlugin;
@@ -13,6 +14,7 @@ fn main() {
     app.add_plugin(WorldInspectorPlugin::new());
 
     app.add_plugins(DefaultPlugins)
+        .add_plugin(TweeningPlugin)
         .add_plugin(ToastPlugin)
         .insert_resource(WindowDescriptor {
             title: "bevy_toast: Hello world!".to_string(),
