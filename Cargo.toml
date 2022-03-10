@@ -1,0 +1,11 @@
+[package]
+name = "bevy_toast"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bevy = "0.6"
+bevy-inspector-egui = "0.8.2"
+bevy_tweening = "0.3.3"
