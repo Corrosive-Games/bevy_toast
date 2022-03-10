@@ -6,7 +6,7 @@ edition = "2021"
 repository = "https://github.com/NightlySide/bevy_toast"
 license = "MIT"
 keywords = ["bevy", "toast", "notification"]
-categories = ["Game development"]
+categories = ["game-development"]
 exclude = [".readme_assets"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
