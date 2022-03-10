@@ -1,5 +1,11 @@
 # 🍞 Bevy Toast
 
+[![License: MIT/Apache](https://img.shields.io/badge/License-MIT%20or%20Apache2-blue.svg)](https://opensource.org/licenses/MIT)
+[![Doc](https://docs.rs/bevy_toast/badge.svg)](https://docs.rs/bevy_tweening)
+[![Crate](https://img.shields.io/crates/v/bevy_toast.svg)](https://crates.io/crates/bevy_tweening)
+[![Coverage Status](https://coveralls.io/repos/github/Nightlyside/bevy_toast/badge.svg?branch=main&kill_cache=1)](https://coveralls.io/github/Nightlyside/bevy_toast?branch=main)
+[![Bevy tracking](https://img.shields.io/badge/Bevy%20tracking-v0.6-lightblue)](https://github.com/bevyengine/bevy/blob/main/docs/plugins_guidelines.md#main-branch-tracking)
+
 A bevy plugin to easily show toast notifications to the player
 
 ## Features
@@ -51,6 +57,8 @@ fn keyboard_handler(
 }
 ```
 
-### Configure the toast
+### Compatible versions
 
-WIP
+| bevy | bevy_toast |
+| ---- | ---------- |
+| 0.6  | 0.1        |

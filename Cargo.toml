@@ -1,11 +1,19 @@
 [package]
 name = "bevy_toast"
+description = "A bevy plugin to easily show toast notifications to the player"
 version = "0.1.0"
 edition = "2021"
+repository = "https://github.com/NightlySide/bevy_toast"
+license = "MIT"
+keywords = ["bevy", "toast", "notification"]
+categories = ["Game development"]
+exclude = [".readme_assets"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-bevy = "0.6"
-bevy-inspector-egui = "0.8.2"
+bevy = { version = "0.6.1", default-features = false, features = ["png"] }
 bevy_tweening = "0.3.3"
+
+[dev-dependencies]
+bevy-inspector-egui = "0.8.2"
